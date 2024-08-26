@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaJam Coffee Haus Menu</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <header><h1>JavaJam Coffee House</h1></header>
-    <nav>
-        <b>
+    <div id = "wrapper">
+    <header><img src="javajam_logo.png"></header>
+    <div id = "center_container">
+    <nav id = "leftcolumn">
             <a href = "index.html">Home</a>
-            <a href = "menu.html"> Menu </a> &nbsp;
+            <a href = "menu.html"> Menu </a>
             <a href = "music.html">Music</a> 
             <a href = "jobs.html">Jobs</a>
-        </b>
-    </nav>
-<div>
-<dl>
-    <dt><strong>Just Java</strong></dt>
-    <dd>Regular house blend, decaffeinated coffee, or flavour of the day. <br>Endless cup $2.00</dd>
-    <dt><strong>Cafe au Lait</strong></dt>
-    <dd>Home blended coffee infused into a smooth steamed milk.<br>Single $2.00 Double $3.00</dd>
-    <dt><strong>Iced Cuppacino</strong></dt>
-    <dd>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>Single $4.75 Double $5.75</dd>
-</dl>
+    </nav>   
+<div id ="rightcolumn">
+    <h2 id = "intro">Coffee at JavaJam</h2>
+    <table>
+        <tr class = "brown_table">
+            <th>Just Java</th>
+            <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+                Endless Cup $2.00</td>
+        </tr>
+        <tr>
+            <th>Cafe au Lait</th>
+            <td>House blended coffee infused into a smooth, steamed milk.<br>
+                Single $2.00 Double $3.00</td>
+        </tr>
+        <tr  class = "brown_table">
+            <th>Iced Cappuccino</th>
+            <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>
+                Single $4.75 Double $5.75</td>
+        </tr>
+    </table>
+</div>
 </div>
 <footer>
     <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small>
     <br>
-    <small><i>David@Tan.com</i></small>
+    <small><i><u>David@Tan.com</u></i></small>
 </footer>
+</div>
 </body>
 </html>

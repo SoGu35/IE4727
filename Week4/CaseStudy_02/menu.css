@@ -21,7 +21,7 @@ header img {
   width: 50%;
   height: 50%;
 }
-.center {
+#center_container {
   display: flex;
 }
 #leftcolumn {
@@ -46,36 +46,20 @@ header img {
   height: 300px;
   min-width: 80%;
 }
+#rightcolumn table {
+  margin-left: 50px;
+  max-width: 85%;
+}
+.brown_table {
+  background-color: #d1b38d;
+}
 #intro {
   margin-top: 10px;
   margin-left: 10px;
 }
-.container_right {
-  display: flex;
-}
-.container_right img {
-  width: 15em;
-  height: 10em;
-  padding-left: 40px;
-}
-.container_right p {
-  margin-left: 30px;
-}
-
 footer {
   background-color: #d1b38d;
   color: black;
   text-align: center;
   padding: 5px;
-}
-ul {
-  list-style: none;
-}
-
-ul li {
-  background-image: url("listlogo.png");
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  padding-top: -13px;
 }

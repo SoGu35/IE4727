@@ -1,0 +1,39 @@
+body {font-family:Verdana, Arial, sans-serif;
+    background-color: beige;
+}
+#wrapper { background-color: #b3c7e6; 
+         width: 80%;
+         margin: auto;
+         min-width: 800px;		   
+} 
+#leftcolumn { float: left;
+            width: 150px;
+            background-color: #e2d1b3;
+} 
+#rightcolumn { margin-left: 150px;
+             background-color: #f5f5dd;
+} 
+header { background-color: #d1b38d;
+         padding: 10px;
+}
+h2 {
+   font-family: arial, sans-serif;
+}
+.content {padding: 20px 20px 0 20px; 
+} 
+#floatright { margin: 10px;
+           float: right;
+}
+
+footer {font-size:70%;
+       text-align: center;
+       clear: right;
+       padding-bottom:20px;
+}	
+nav a {	margin: 30px;
+
+} 
+#teahouse{
+    width: 30%;
+    height: 20%;
+}

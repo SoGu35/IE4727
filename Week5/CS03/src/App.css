@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+#big{
+    display: flex;
+    margin-top: 25vh;
+}
+#login{
+    border: 2px outset #AABBCC;
+    border-radius: 5%;
+    padding: 1vh 3vw 2vh 3vw;
+}
+#submit {
+    margin-top: 1vh;
+}

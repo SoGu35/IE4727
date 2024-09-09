@@ -32,46 +32,46 @@ function FormValidationExample() {
   return (
     <Container fluid id = "big">
       <form onSubmit={handleSubmit} id = "login">
-        <div class="form-group">
-          <label for="Username">Username:</label>
+        <div className="form-group">
+          <label htmlFor="Username">Username:</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Username"
             onChange={handleUsernameChange}
           />
         </div>
 
-        <div class="form-group">
-          <label for="Email">Email:</label>
+        <div className="form-group">
+          <label htmlFor="Email">Email:</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Example@gmail.com"
             onChange={handleEmailChange}
           />
         </div>
 
-        <div class="form-group">
-        <label for = "Password">Password:</label>
+        <div className="form-group">
+        <label htmlFor = "Password">Password:</label>
           <input
             type="text"
-            class = "form-control"
+            className = "form-control"
             placeholder="*****"
             onChange={handlePasswordChange}
           />
         </div>
-        <div class="form-group">
-        <label for = "Confirm_Password">Confirm Password:</label>
+        <div className="form-group">
+        <label htmlFor = "Confirm_Password">Confirm Password:</label>
           <input
             type="text"
-            class = "form-control"
+            className = "form-control"
             placeholder="*****"
             onChange={handleConfirmPasswordChange}
           />
         </div>
         
-        <Button type="submit" class="btn btn-dark" id = "submit">
+        <Button type="submit" className="btn btn-dark" id = "submit">
           Submit
         </Button>
       </form>

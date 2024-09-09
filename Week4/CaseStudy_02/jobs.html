@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaJam Coffee Haus</title>
-    <link rel="stylesheet" href="jobs.css">
-</head>
-<body>
-    <div id = "wrapper">
-    <header><img src="javajam_logo.png"></header>
-    <div class = "center">
-    <nav id = "leftcolumn">
-            <a href = "index.html">Home</a>
-            <a href = "menu.html"> Menu </a>
-            <a href = "music.html">Music</a> 
-            <a href = "jobs.html">Jobs</a>
-    </nav>   
-<div id ="rightcolumn">
-    <h2 id = "intro">Jobs at JavaJam</h2>
-    <p>Want to work at JavaJam? Fill up the form below to start your application. Required fields are marked with an asterisk*</p>
-    
-    <!--add form-->
-</div>
-</div>
-<footer>
-    <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small>
-    <br>
-    <small><i><u>David@Tan.com</u></i></small>
-</footer>
-</div>
-</body>
+    <link rel="stylesheet" href="jobs.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><img src="javajam_logo.png" /></header>
+      <div class="center">
+        <nav id="leftcolumn">
+          <a href="index.html">Home</a>
+          <a href="menu.html"> Menu </a>
+          <a href="music.html">Music</a>
+          <a href="jobs.html">Jobs</a>
+        </nav>
+        <div id="rightcolumn">
+          <h2 id="intro">Jobs at JavaJam</h2>
+          <p>
+            Want to work at JavaJam? Fill up the form below to start your
+            application. Required fields are marked with an asterisk*
+          </p>
+          <form method="post" class="apply_job">
+            <div>
+              <label for="name">*Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Name"
+                required
+              /><br />
+            </div>
+
+            <div>
+              <label for="email">*Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="start_date">Start Date:</label>
+              <input type="date" id="date" name="date" /><br />
+            </div>
+            <div>
+              <label for="exp">*Experience:</label>
+              <textarea
+                id="exp"
+                name="exp"
+                placeholder="Enter Experience"
+                required
+              ></textarea
+              ><br />
+            </div>
+
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <footer>
+        <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small>
+        <br />
+        <small
+          ><i><u>David@Tan.com</u></i></small
+        >
+      </footer>
+    </div>
+  </body>
 </html>

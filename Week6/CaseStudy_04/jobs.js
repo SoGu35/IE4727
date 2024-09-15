@@ -1,46 +1,60 @@
 
-function validate_name(){
-    //Regex pattern for name validation
-    const namecheck = /^[a-zA-Z]+$/;
-    var inputName = document.getElementById("name");
-    var checkName = namecheck.test(inputName.value).toString();
-    if(!namecheck.test(checkName)){
-        alert("Invalid name format");
-        inputName.value = "";
+function validateName() {
+    // Get the name field value
+    var name = document.forms["loginForm"]["name"].value;
+
+    // Regular expression to allow only alphabets and spaces
+    var namePattern = /^[A-Za-z\s]+$/;
+
+    // Check if the name field is empty or does not match the pattern
+    if (name == "") {
+        alert("Name is required.");
+        return false;
+    } else if (!namePattern.test(name)) {
+        alert("Name can only contain alphabets and spaces.");
+        return false;
     }
-    else{
-        return true
+
+    // If validation passes, allow form submission
+    return true;
+}
+function validateEmail() {
+    // Get the email field value
+    var email = document.forms["loginForm"]["email"].value;
+
+    // Regular expression to allow only valid email addresses
+    var emailPattern = /^[\w.-]+@([\w-]+\.){1,3}[\w]{2,3}$/;
+
+    // Check if the email field is empty or does not match the pattern
+    if (email == "") {
+        alert("Email is required.");
+        return false;
+    } else if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // If validation passes, allow form submission
+    return true;
+}
+function validateDate(){
+    //check if date is before today and return false if it is
+    var date = document.forms["loginForm"]["date"].value;
+    var today = new Date();
+    var date = new Date(date);
+    if(date < today){
+        alert("Date must be after today");
+        return false;
+    }
+    else
+        return true;
+    }
+
+
+function handleSubmit() {
+    if(validateName() && validateEmail() && validateDate()) {
+    }
+    else {
+    event.preventDefault();
     }
 }
-function validate_email(){
-    //Regex pattern for email validation
-    const pattern = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2,3})?(\.[a-zA-Z]{2,3})?$/;
-    var inputEmail = document.getElementById("email");
-    var checkEmail = pattern.test(inputEmail.value).toString();
-    if(!pattern.test(checkEmail)){
-        alert("Invalid email format");
-        inputEmail.value = "";
-    }
-    else{
-        return true
-    }
-}
-function validate_Date() {
-    const dateInput = document.getElementById('date');
-    const today = new Date();
-    const selectedDate = new Date(dateInput.value);
-    if (selectedDate < today) {
-        alert("Start date cannot be today or in the past.");
-        return false; // Prevent form submission
-    }
-    return true; // Allow form submission
-}
-// run functions if submit button is clicked
-document.getElementById("submit").addEventListener("click", function(event){
-    if(validate_name() && validate_email() && validate_Date()){
-        alert("Form Submitted Successfully");
-    }
-    else{
-        event.preventDefault();
-    }
-});

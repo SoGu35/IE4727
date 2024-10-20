@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: auto;
     min-width: 20%;
   }
   #leftcolumn a {

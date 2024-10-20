@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaJam Coffee Haus</title>
     <link rel="stylesheet" href="jobs.css" />
-    <script type = "text.javascript" src="jobs.js" defer></script>
+    <script src="jobs.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -23,7 +23,7 @@
             Want to work at JavaJam? Fill up the form below to start your
             application. Required fields are marked with an asterisk*
           </p>
-          <form method="post" class="apply_job" action = "form.php">
+          <form method="post" name = "loginForm" class="apply_job" action = "form.php" onsubmit="handleSubmit()">
             <div>
               <label for="name">*Name:</label>
               <input

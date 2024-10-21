@@ -11,6 +11,7 @@ name varchar(100),
 prices varchar(100)
 )";
 $db->query($query);
+//go to http://localhost:8000/phpmyadmin/index.php?route=/sql&pos=0&db=mysql&table=prices and initialise names
 //form submission to update the prices
 $java = trim($_POST['java']);
 $cafe = trim($_POST['cafe']);
@@ -34,7 +35,7 @@ $db->query($query);
         echo "Error updating prices: " . $db->error;
     } else {
         // Refresh prices after update
-        header("Location: menu_update.html");
+      header("Location: menu_update.html");
         exit;
     }
 // Close the database connection

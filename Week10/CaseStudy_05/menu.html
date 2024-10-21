@@ -24,7 +24,7 @@
         <tr class = "brown_table">
             <th>Just Java</th>
             <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
-                Endless Cup $2.00</td>
+                Endless Cup $<span id="java-price">0.00</span></td>
                 <td class = text_contain> 
                     <input type = "text" id = "Quantity1" class = "qty">
                     <div id = "Sub1" class = "display">0</div>
@@ -33,7 +33,7 @@
         <tr>
             <th>Cafe au Lait</th>
             <td>House blended coffee infused into a smooth, steamed milk.<br>
-                Single $2.00 <input type = "radio" id = "au_lait_s" name = "au_lait">Double $3.00 <input type = "radio" id = "au_lait_d"  name = "au_lait" checked></td>
+                Single $<span id="cafe-price">0.00</span> <input type = "radio" id = "au_lait_s" name = "au_lait">Double $<span id="cafe2-price">0.00</span> <input type = "radio" id = "au_lait_d"  name = "au_lait" ></td>
                 <td class = text_contain> 
                     <input type = "text" id = "Quantity2" class = "qty">
                     <div id = "Sub2" class = "display">0</div>
@@ -42,7 +42,7 @@
         <tr  class = "brown_table">
             <th>Iced Cappuccino</th>
             <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>
-                Single $4.75<input type = "radio" id = "cupp_s" name = "cupp"> Double $5.75<input type = "radio" id = "cupp_d" name = "cupp" checked></td>
+                Single $<span id="iced-price">0.00</span><input type = "radio" id = "cupp_s" name = "cupp"> Double $<span id="iced2-price">0.00</span><input type = "radio" id = "cupp_d" name = "cupp" ></td>
                 <td class = text_contain> 
                     <input type = "text" id = "Quantity3" class = "qty">
                     <div id = "Sub3" class = "display">0</div> 
@@ -58,6 +58,6 @@
     <small><i><u>David@Tan.com</u></i></small>
 </footer>
 </div>
-</body>
 <script src="menu.js"></script>
+</body>
 </html>

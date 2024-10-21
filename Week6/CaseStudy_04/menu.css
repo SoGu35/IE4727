@@ -57,6 +57,8 @@ header img {
 #intro {
   margin-top: 10px;
   margin-left: 10px;
+  display:flex;
+  justify-content: space-between;
 }
 footer {
   background-color: #d1b38d;

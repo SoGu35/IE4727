@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaJam Coffee Haus Menu</title>
+    <link rel="stylesheet" href="menu.css">
+  
+</head>
+<body>
+    <div id = "wrapper">
+    <header><img src="javajam_logo.png"></header>
+    <div id = "center_container">
+    <nav id = "leftcolumn">
+            <a href = "index.html">Home</a>
+            <a href = "menu.html"> Menu </a>
+            <a href = "music.html">Music</a> 
+            <a href = "jobs.html">Jobs</a>
+            <a href = "menu_update.html">Update Menu</a>
+            <a href = "report.html">Sales Report</a>
+    </nav>   
+<div id ="rightcolumn">
+    <h2 id = "intro">Coffee at JavaJam</h2>
+    <table>
+        <tr class = "brown_table">
+            <th>Just Java</th>
+            <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+                Endless Cup $<span id="java-price">0.00</span></td>
+                <td class = text_contain> 
+                    <input type = "text" id = "Quantity1" class = "qty">
+                    <div id = "Sub1" class = "display">0</div>
+                </td>
+        </tr>
+        <tr>
+            <th>Cafe au Lait</th>
+            <td>House blended coffee infused into a smooth, steamed milk.<br>
+                Single $<span id="cafe-price">0.00</span> <input type = "radio" id = "au_lait_s" name = "au_lait" checked = true>Double $<span id="cafe2-price">0.00</span> <input type = "radio" id = "au_lait_d"  name = "au_lait" ></td>
+                <td class = text_contain> 
+                    <input type = "text" id = "Quantity2" class = "qty">
+                    <div id = "Sub2" class = "display">0</div>
+                </td>
+        </tr>
+        <tr  class = "brown_table">
+            <th>Iced Cappuccino</th>
+            <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br>
+                Single $<span id="iced-price">0.00</span><input type = "radio" id = "cupp_s" name = "cupp" checked = true> Double $<span id="iced2-price">0.00</span><input type = "radio" id = "cupp_d" name = "cupp" ></td>
+                <td class = text_contain> 
+                    <input type = "text" id = "Quantity3" class = "qty">
+                    <div id = "Sub3" class = "display">0</div> 
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <button id = "out">Checkout</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+<footer>
+    <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small> 
+    Total price is: <span id = "Total">0</span>
+    <br>
+    <small><i><u>David@Tan.com</u></i></small>
+</footer>
+</div>
+<script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaJam Coffee Haus Menu</title>
+    <link rel="stylesheet" href="menu_update.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><img src="javajam_logo.png" /></header>
+      <div id="center_container">
+        <nav id="leftcolumn">
+          <p>
+            <b>
+              Produce <br />
+              Price <br />
+              Update<br> <br>
+            </b>
+            <a href="menu.html">Menu</a>
+          </p>
+        </nav>
+        <div id="rightcolumn">
+          <h2 id="intro">Click to update product prices</h2>
+          <table>
+            <tr class="brown_table">
+              <th>Just Java</th>
+              <td>
+                Regular house blend, decaffeinated coffee, or flavor of the
+                day.<br />
+                Endless Cup  $<span id="java-price">0.00</span>
+              </td>
+              <td class="text_contain">
+                <button id="update1"></button>
+                <div id="popupForm1" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup1">&times;</span>
+                        <h2>Enter New Sales Price</h2>
+                        <form action="menu_update.php" method="post">
+                            <input type="text" name="java" required placeholder="Single Java">
+                        <button id="submitPrice">Submit</button>
+                        </form>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Cafe au Lait</th>
+              <td>
+                House blended coffee infused into a smooth, steamed milk.<br />
+                Single $<span id="cafe-price">0.00</span> Double $<span id="cafe2-price">0.00</span>
+              </td>
+              <td class="text_contain">
+                <button id="update2"></button>
+                <div id="popupForm2" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup2">&times;</span>
+                        <h2>Enter New Sales Price</h2>
+                        <form action="menu_update.php" method="post">
+                            <input type="text" name="cafe" required placeholder = "Single Cafe">
+                            <input type="text" name="cafe2" required placeholder = "Double Cafe">
+                        <button id="submitPrice2">Submit</button>
+                        </form>
+                </div>
+              </td>
+            </tr>
+            <tr class="brown_table">
+              <th>Iced Cappuccino</th>
+              <td>
+                Sweetened espresso blended with icy-cold milk and served in a
+                chilled glass.<br />
+                Single $<span id="iced-price">0.00</span> Double $<span id="iced2-price">0.00</span>
+              </td>
+              <td class="text_contain">
+                <button id="update3"></button>
+                <div id="popupForm3" class="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup3">&times;</span>
+                        <h2>Enter New Sales Price</h2>
+                        <form action="menu_update.php" method="post">
+                            <input type="text" name="iced" required placeholder="Single Iced">
+                            <input type="text" name="iced2" required placeholder="Double Iced">
+                        <button id="submitPrice3">Submit</button>
+                        </form>
+                    </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer>
+        <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small>
+        <br />
+        <small
+          ><i><u>David@Tan.com</u></i></small
+        >
+      </footer>
+    </div>
+  </body>
+  <script src="menu_update.js"></script>
+</html>

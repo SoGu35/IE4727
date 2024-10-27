@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaJam Coffee Haus Report</title>
+    <link rel="stylesheet" href="report.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header><img src="javajam_logo.png" /></header>
+      <div id="center_container">
+        <nav id="leftcolumn">
+          <p>
+            <b>
+              Daily <br />
+              Sales <br />
+              Report<br> <br>
+            </b>
+            <a href="menu.html">Menu</a>
+          </p>
+        </nav>
+        <div id="rightcolumn">
+          <h2 id="intro">Click to update Generate Report</h2>
+          <p> Total Dollar and QTY sales by products</p>
+            <form action="report_prod.php" method="post">
+                <input type="submit" value="Generate Report" />
+            </form>
+            <p> Total Dollar and QTY sales by categories</p>
+            <form action="report_cat.php" method="post">
+                <input type="submit" value="Generate Report" />
+            </form>
+        </div>
+      </div>
+      <footer>
+        <small><i>Copyright &copy; 2014 JavaJam Coffee House</i></small>
+        <br />
+        <small
+          ><i><u>David@Tan.com</u></i></small
+        >
+      </footer>
+    </div>
+  </body>
+
+</html>
